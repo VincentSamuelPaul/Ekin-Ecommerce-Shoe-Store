@@ -19,7 +19,7 @@ function App() {
   const [password, setPassword] = useState("");
 
   const getData = async() => {
-    const response = await fetch("http://127.0.0.1:8000/getshoes", {
+    const response = await fetch("https://ecommbackend-asaw.onrender.com/getshoes", {
       method: "GET",
       headers: {
           'Content-Type': 'application/json',

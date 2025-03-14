@@ -9,7 +9,7 @@ const Profile = ({setCurPost, username, setUsername, password, setPassword, user
     const [orders, setOrders] = useState([]);
 
     const login = async() => {
-        const response = await fetch("http://127.0.0.1:8000/login", {
+        const response = await fetch("https://ecommbackend-asaw.onrender.com/login", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
@@ -26,7 +26,7 @@ const Profile = ({setCurPost, username, setUsername, password, setPassword, user
     }
 
     const signup = async() => {
-        const response = await fetch("http://127.0.0.1:8000/signup", {
+        const response = await fetch("https://ecommbackend-asaw.onrender.com/signup", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
@@ -44,7 +44,7 @@ const Profile = ({setCurPost, username, setUsername, password, setPassword, user
 
     useEffect(() => {
         const getOrders = async() => {
-            const response = await fetch("http://127.0.0.1:8000/getorders", {
+            const response = await fetch("https://ecommbackend-asaw.onrender.com/getorders", {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json',

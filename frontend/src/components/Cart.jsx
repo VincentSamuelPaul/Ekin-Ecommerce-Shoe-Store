@@ -23,7 +23,7 @@ const Cart = ({cartData, setCurPost, user, setCartData}) => {
                 cartData[i].username = user;
             }
             console.log(cartData);
-            const response = await fetch("http://127.0.0.1:8000/createorders", {
+            const response = await fetch("https://ecommbackend-asaw.onrender.com/createorders", {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json',

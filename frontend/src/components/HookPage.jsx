@@ -1,4 +1,4 @@
-import React from 'react'
+
 import hook from "../assets/hook.jpg"
 import "../styles/HookPage.css"
 

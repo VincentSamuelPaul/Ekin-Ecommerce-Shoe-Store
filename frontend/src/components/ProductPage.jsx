@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router';
 
 const ProductPage = ({curPost, cartData, setCartData}) => {
 
-    const url = "http://127.0.0.1:8000";
+    const url = "https://ecommbackend-asaw.onrender.com";
     
     const navigate = useNavigate();
     

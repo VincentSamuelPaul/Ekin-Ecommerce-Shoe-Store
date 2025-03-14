@@ -6,7 +6,7 @@ const Product = ({id, name, desc, price, link, setCurPost}) => {
 
     const navigate = useNavigate();
 
-    const url = "http://127.0.0.1:8000";
+    const url = "https://ecommbackend-asaw.onrender.com";
 
     const getCurPost = () => {
         setCurPost({id, name, desc, price, link});
